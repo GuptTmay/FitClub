@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 2.5rem;
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* .header>:nth-child(2) */
+    .header-menu {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 1rem;
+    }
+
+    .menu-bar {
+        background-color: var(--appColor);
+        padding: 0.5rem ;
+        right: 2rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;    
+        z-index: 99;
+    }
+
+    .menu-bar>img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+}
